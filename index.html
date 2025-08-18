@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonial Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+      font-family: 'Archivo-ExtraBold';
+      src: url('Assets/Archivo-ExtraBold.ttf') format('truetype');
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Testimonial Generator</h1>
+
+    <label for="nameInput">Your Name</label>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+
+    <label for="imageUpload">Upload Your Photo</label>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <canvas id="cropCanvas" width="250" height="250"></canvas>
+    <label for="zoomSlider">Zoom</label>
+    <input type="range" id="zoomSlider" min="0.5" max="2" step="0.01" value="1" />
+    <button id="applyCropBtn">Apply Crop</button>
+
+    <label for="testimonialInput">Your Testimonial</label>
+    <textarea id="testimonialInput" placeholder="Write a short testimonial"></textarea>
+
+    <button id="downloadBtn">Download Final Image</button>
+    <canvas id="previewCanvas" width="1080" height="1350"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body { font-family: 'Archivo', sans-serif; 
+  background-color: #f4f4f4; 
+  margin: 0; 
+  padding: 0; }
+  
+  .container { 
+    max-width: 600px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 12px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+  h1 { 
+    text-align: center; 
+    font-family: 'Archivo-ExtraBold', sans-serif; font-size: 28px; margin-bottom: 20px; }
+
+  label { 
+  display: block; 
+  margin-top: 20px; 
+  font-weight: bold; }
+input[type="text"], textarea { width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; box-sizing: border-box; }
+input[type="file"] { margin-top: 8px; }
+canvas { display: block; margin: 20px auto; border: 1px solid #ccc; border-radius: 6px; max-width: 100%; height: auto; }
+
+#zoomSlider { 
+  width: 100%; 
+  margin-top: 10px; }
+
+  button { 
+    display: block; width: 100%; padding: 12px; margin-top: 20px; background-color: #0078D7; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; }
+button:hover { background-color: #005fa3; }
+
+
+/* 🔸 Responsive tweaks */ @media (max-width: 768px) { .container { margin: 20px; padding: 16px; }
+h1 {
+  font-size: 24px;
+}
+
+button {
+  font-size: 15px;
+  padding: 10px;
+}
+
+}
+@media (max-width: 480px) { h1 { font-size: 20px; }
+input[type="text"],
+textarea {
+  font-size: 14px;
+}
+
+button {
+  font-size: 14px;
+}
+
+} 
