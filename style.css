@@ -67,7 +67,8 @@ body { font-family: 'Archivo', sans-serif;
     text-align: center; 
     font-family: 'Archivo-ExtraBold', sans-serif; 
     font-size: 28px; 
-    margin-bottom: 20px; }
+    margin-bottom: 20px; 
+  }
 
   label { 
   display: block; 
@@ -122,5 +123,12 @@ textarea {
 button {
   font-size: 14px;
 }
+
+  h1 { 
+    text-align: center; 
+    font-family: 'Archivo-ExtraBold', sans-serif; 
+    font-size: 16px; 
+    margin-bottom: 16px; 
+  }
 
 } 
