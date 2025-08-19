@@ -210,6 +210,24 @@ function drawFinalCanvas() {
 
   
 
+  // Slider
+  const bgImages = [
+  'Assets/reception_-3.jpg',
+  'Assets/reception_-4.jpg',
+  'Assets/reception_-14.jpg'
+];
+
+let currentIndex = 0;
+const bgSlider = document.querySelector('.background-slider');
+
+function changeBackground() {
+  bgSlider.style.backgroundImage = `url('${bgImages[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % bgImages.length;
+}
+
+changeBackground(); // Initial load
+setInterval(changeBackground, 5000); // Change every 5 seconds
+
   // Testimonial box
   const boxX = 74.35;
   const boxY = 662.72;
